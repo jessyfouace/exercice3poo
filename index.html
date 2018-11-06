@@ -14,8 +14,24 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="row col-12 m-0 p-0">
+      <div class="row col-6 m-0 p-0 mx-auto">
+        <form action="">
+          <label for="title">Titre:</label>
+          <input type="text" id="title"><br>
+          <label for="accroche">Phrase D'accroche:</label>
+          <input type="text" id="accroche"><br>
+          <label for="description">Description:</label>
+          <input type="text" id="description"><br>
+          <input type="button" value="Envoyer" onclick="addCard()">
+        </form>
+      </div>
+      <div class="row col-6 m-0 p-0" id="viewCard">
 
-
+      </div>
+    </div>
+  </div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
