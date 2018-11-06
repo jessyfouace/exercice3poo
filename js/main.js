@@ -9,6 +9,10 @@ function addCard() {
     let accroches = document.getElementById('accroche').value;
     let description = document.getElementById('description').value;
     newObject = new Cards(titles, accroches, description);
+    document.getElementById('title').value = "";
+    document.getElementById('accroche').value = "";
+    document.getElementById('description').value = "";
+
     let htmlManager = {
         parentElement: document.getElementById('viewCard'),
         card: [newObject],
